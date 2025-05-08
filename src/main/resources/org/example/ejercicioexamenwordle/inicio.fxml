@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="rootVBox" spacing="15" alignment="CENTER"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.ejercicioexamenwordle.InicioController"
+      stylesheets="@styles/style.css">
+
+    <padding>
+        <Insets top="40" bottom="40" left="20" right="20"/>
+    </padding>
+
+    <!-- Logo -->
+    <ImageView fx:id="logoImage" fitWidth="350" preserveRatio="true"/>
+
+    <!-- Texto -->
+    <Label text="Introduce tu nombre de usuario:"/>
+
+    <!-- Campo de texto -->
+    <TextField fx:id="nombreUsuarioField" promptText="Tu nombre"/>
+
+    <!-- Botón comenzar -->
+    <Button fx:id="botonComenzar" text="Comenzar Partida" onAction="#comenzarPartida" styleClass="boton-chulo"/>
+</VBox>

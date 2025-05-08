@@ -81,7 +81,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                org.example.ejercicioexamenwordle/org.example.ejercicioexamenwordle.HelloApplication
+                                org.example.ejercicioexamenwordle/org.example.ejercicioexamenwordle.Main
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

@@ -1,0 +1,58 @@
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    -fx-padding: 20px;
+}
+
+/* Etiquetas */
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+}
+
+/* Campo de texto */
+.text-field {
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #90caf9;
+    -fx-border-width: 1.5;
+    -fx-background-color: #ffffff;
+}
+
+/* Botón base (por si no usamos styleClass) */
+.button {
+    -fx-font-size: 14px;
+    -fx-background-color: #42a5f5;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 10 20 10 20;
+}
+
+/* Efecto hover del botón base */
+.button:hover {
+    -fx-background-color: #1e88e5;
+}
+
+/* Estilo personalizado para botón animado */
+.boton-chulo {
+    -fx-font-size: 15px;
+    -fx-background-color: #42a5f5;
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-padding: 10 24 10 24;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(66, 165, 245, 0.5), 8, 0.1, 0, 2);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Hover con animación suave y ampliación */
+.boton-chulo:hover {
+    -fx-background-color: #1e88e5;
+    -fx-effect: dropshadow(gaussian, rgba(30, 136, 229, 0.8), 14, 0.3, 0, 3);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-rotate: 0.5;
+}
