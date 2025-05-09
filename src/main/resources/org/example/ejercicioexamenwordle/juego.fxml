@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="rootJuegoVBox" xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.ejercicioexamenwordle.JuegoController"
+      alignment="TOP_CENTER"
+      spacing="20"
+      stylesheets="@styles/style.css"
+      style="-fx-background-color: #e3f2fd;">
+
+    <padding>
+        <Insets top="30" bottom="30" left="20" right="20"/>
+    </padding>
+
+    <!-- Logo -->
+    <ImageView fx:id="logoJuego" fitWidth="350" preserveRatio="true"/>
+
+    <!-- 5 filas de letras -->
+    <VBox spacing="10" alignment="CENTER">
+        <HBox fx:id="fila1Box" spacing="10" alignment="CENTER">
+            <TextField fx:id="f1c1" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f1c2" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f1c3" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f1c4" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f1c5" prefWidth="50" alignment="CENTER"/>
+        </HBox>
+
+        <HBox fx:id="fila2Box" spacing="10" alignment="CENTER">
+            <TextField fx:id="f2c1" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f2c2" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f2c3" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f2c4" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f2c5" prefWidth="50" alignment="CENTER"/>
+        </HBox>
+
+        <HBox fx:id="fila3Box" spacing="10" alignment="CENTER">
+            <TextField fx:id="f3c1" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f3c2" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f3c3" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f3c4" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f3c5" prefWidth="50" alignment="CENTER"/>
+        </HBox>
+
+        <HBox fx:id="fila4Box" spacing="10" alignment="CENTER">
+            <TextField fx:id="f4c1" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f4c2" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f4c3" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f4c4" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f4c5" prefWidth="50" alignment="CENTER"/>
+        </HBox>
+
+        <HBox fx:id="fila5Box" spacing="10" alignment="CENTER">
+            <TextField fx:id="f5c1" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f5c2" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f5c3" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f5c4" prefWidth="50" alignment="CENTER"/>
+            <TextField fx:id="f5c5" prefWidth="50" alignment="CENTER"/>
+        </HBox>
+    </VBox>
+
+    <!-- Pista -->
+    <Label fx:id="pistaLabel" text="Pista: ???" styleClass="pista-texto"/>
+
+    <!-- Número de intentos restantes -->
+    <Label fx:id="intentosLabel" text="Intentos restantes: 5" styleClass="pista-texto"/>
+
+    <!-- Botones -->
+    <HBox spacing="20" alignment="CENTER">
+        <Button fx:id="validarButton" text="Validar Intento"/>
+        <Button fx:id="reiniciarButton" text="Reiniciar Partida"/>
+    </HBox>
+</VBox>

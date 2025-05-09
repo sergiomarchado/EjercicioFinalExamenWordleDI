@@ -25,5 +25,5 @@
     <TextField fx:id="nombreUsuarioField" promptText="Tu nombre"/>
 
     <!-- Botón comenzar -->
-    <Button fx:id="botonComenzar" text="Comenzar Partida" onAction="#comenzarPartida" styleClass="boton-chulo"/>
+    <Button fx:id="botonComenzar" text="Comenzar Partida" styleClass="boton-chulo"/>
 </VBox>
